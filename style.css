@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #5e63ba;
+  justify-content: center;
+  align-items: center;
+}
+
+.con {
+  padding: 10px;
+  border-radius: 10px;
+  width: 55%;
+  height: 440px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-box {
+  margin: 30px;
+}
+.left-box img {
+  height: 300px;
+  width: 250px;
+}
+
+.left-box h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter-con {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 40px;
+}
+
+
+/* Add using JS */
+
+.letter {
+  width: 30px;
+  border-bottom: 3px solid black;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.show2 {
+  border: transparent;
+}
+
+.hint {
+  margin: 15px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.incorrect-guess {
+  margin: 10px;
+  font-size: 15px;
+}
+
+.incorrect-guess span {
+  color: red;
+}
+
+/* button container */
+
+
+.btn-con {
+  margin: 20px;
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* container buttons */
+
+
+.btn-con button {
+  width: 40px;
+  padding: 11px 6px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #5e63ba;
+  color: white;
+  font-weight: 600;
+  margin: 2px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+/* win-loss DialgBox */
+
+.game-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.46);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.4s;
+  opacity: 0;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.contant {
+  background-color: white;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+.game-modal img {
+  width: 100px;
+}
+
+.game-modal h2 {
+  margin-block: 10px;
+}
+
+.game-modal p {
+  margin-block: 10px;
+}
+
+.game-modal button {
+  margin-block: 10px;
+  padding: 11px 20px;
+  border: none;
+  outline: none;
+  background-color: #5e63ba;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="icon" href="hangman-game-images/victory.gif" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="hangman-game-word-list.js"></script>
+  </head>
+  <body>
+    <div class="con">
+      <!-- left Box of UI -->
+      <div class="left-box">
+        <img src="hangman-game-images/hangman-0.svg" alt="" />
+        <h2>HANGMAN GAME</h2>
+      </div>
+
+      <!-- right-box of UI -->
+      <div class="right-box">
+        <ul class="letter-con"></ul>
+        <p class="hint">
+          Hint:<span
+            >A dark area or shape produced by an object blocking the
+            light.</span
+          >
+        </p>
+        <p class="incorrect-guess">Incorrect guesses:<span>0/6</span></p>
+        
+        <div class="btn-con"></div>
+      </div>
+    </div>
+    
+    <!--  win loss box -->
+      
+    <div class="game-modal">
+      <div class="contant">
+        <img src="hangman-game-images/lost.gif" alt="" />
+        <h2>Game Over!</h2>
+        <p>The correct word was:<b>rainbow</b></p>
+        <button id="btn">PLAY AGAIN</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
